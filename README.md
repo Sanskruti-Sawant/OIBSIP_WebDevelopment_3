@@ -3,24 +3,34 @@
 
 A simple and elegant To-Do List application built with HTML, CSS, and JavaScript. This project allows users to add, manage, and track tasks in a clean and responsive interface.
 
+## Table of Contents
+
+* [Features](#features)
+* [Live Demo](#live-demo)
+* [Technologies Used](#technologies-used)
+* [How to Run](#how-to-run)
+* [File Structure](#file-structure)
+* [Future Enhancements](#future-enhancements)
+* [Customization](#customization)
+* [How to Contribute](#how-to-contribute)
+* [License](#license)
+
 ## Features
 
 * **Add Tasks:** Easily add new tasks to your to-do list.
-
 * **Mark as Complete:** Move tasks from the "Pending" list to the "Completed" list with a single click.
-
 * **Delete Tasks:** Remove unwanted tasks from the list.
-
 * **Responsive Design:** The app is designed to look and function well on both desktop and mobile devices.
-
 * **Clean UI:** A visually pleasing interface with a modern color palette and smooth transitions.
+
+## Live Demo
+
+A live demo of the application can be found [here](https://gemini-todo-list-app.netlify.app/).
 
 ## Technologies Used
 
 * **HTML5:** Provides the structure and content for the web page.
-
 * **CSS3:** Handles the styling and layout, including custom fonts and responsive design.
-
 * **JavaScript (ES6):** Powers the interactive functionality, such as adding, completing, and deleting tasks.
 
 ## How to Run
