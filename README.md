@@ -1,5 +1,5 @@
 # OIBSIP_WebDevelopment_3
-# To-Do List Web App
+## To-Do List Web App
 
 A simple and elegant To-Do List application built with HTML, CSS, and JavaScript. This project allows users to add, manage, and track tasks in a clean and responsive interface.
 
@@ -25,7 +25,7 @@ A simple and elegant To-Do List application built with HTML, CSS, and JavaScript
 
 ## Live Demo
 
-A live demo of the application can be found [here](https://gemini-todo-list-app.netlify.app/).
+[Live Demo](https://sanskruti-sawant.github.io/OIBSIP_WebDevelopment_3/)
 
 ## Technologies Used
 
