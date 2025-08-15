@@ -1,5 +1,6 @@
 var inputBox = document.getElementById("task-input-box");
 var addBtn = document.getElementById("add-task-button");
+var darkModeToggle = document.getElementById("dark-mode-toggle");
 
 var tasksToDoList = document.getElementById("pending-list");
 var tasksDoneList = document.getElementById("completed-list");
@@ -46,4 +47,11 @@ function addNewTask() {
     inputBox.value = "";
 }
 
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    var isDarkMode = document.body.classList.contains("dark-mode");
+    darkModeToggle.innerText = isDarkMode ? "Light Mode" : "Dark Mode";
+}
+
 addBtn.onclick = addNewTask;
+darkModeToggle.onclick = toggleDarkMode;
