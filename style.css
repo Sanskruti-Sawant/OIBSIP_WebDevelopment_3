@@ -81,20 +81,25 @@ body.dark-mode h2 {
 }
 
 #dark-mode-toggle {
-    padding: 8px 12px;
+    /* Base styling for the toggle button */
+    width: 30px;
+    height: 30px;
     border: none;
-    background-color: var(--primary-color-light);
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: transparent;
+    padding: 0;
+    
+    /* Icon styling for light mode (moon icon) */
+    background-image: url('https://img.freepik.com/premium-vector/light-mode-dark-mode-icons_324666-266.jpg');
+    background-size: 200%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease-in-out;
 }
 
 body.dark-mode #dark-mode-toggle {
-    background-color: var(--primary-color-dark);
-    color: #121212;
+    /* Icon styling for dark mode (sun icon) */
+    background-position: 100% 0;
 }
 
 #add-task-area {
