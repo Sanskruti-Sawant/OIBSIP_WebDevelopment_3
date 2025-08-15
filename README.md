@@ -15,7 +15,7 @@ A simple and elegant To-Do List application built with HTML, CSS, and JavaScript
 * [How to Contribute](#how-to-contribute)
 * [License](#license)
 
-## View
+
 <img width="753" height="699" alt="image" src="https://github.com/user-attachments/assets/8c9ec60e-6a11-400c-a792-7b62f6dc86e5" />
 
 ## Features
