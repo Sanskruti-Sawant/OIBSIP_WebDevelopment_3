@@ -1,40 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+var inputBox = document.getElementById("task-input-box");
+var addBtn = document.getElementById("add-task-button");
+var darkModeToggle = document.getElementById("dark-mode-toggle");
 
-:root {
-    --bg-color-light: #f3e5f5;
-    --bg-color-dark: #121212;
-    --app-bg-light: #ffffff;
-    --app-bg-dark: #1e1e1e;
-    --primary-color-light: #6a1b9a;
-    --primary-color-dark: #bb86fc;
-    --secondary-color-light: #8e24aa;
-    --secondary-color-dark: #9e6cfc;
-    --text-color-light: #333;
-    --text-color-dark: #e0e0e0;
-    --input-border-light: #d1c4e9;
-    --input-border-dark: #3a3a3a;
-    --li-bg-light: #fafafa;
-    --li-bg-dark: #2a2a2a;
-    --li-border-light: #ab47bc;
-    --li-border-dark: #6200ee;
-    --completed-bg-light: #f5f5f5;
-    --completed-bg-dark: #222222;
-    --completed-text-light: #9e9e9e;
-    --completed-text-dark: #757575;
+var tasksToDoList = document.getElementById("pending-list");
+var tasksDoneList = document.getElementById("completed-list");
+
+function addNewTask() {
+    var theTaskText = inputBox.value;
+
+    if (theTaskText === "") {
+        alert("please add a task");
+        return;
+    }
+
+    var newTaskItem = document.createElement("li");
+    
+    var textElement = document.createElement("span");
+    textElement.innerText = theTaskText;
+
+    var allButtons = document.createElement("div");
+    allButtons.className = 'task-buttons';
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "Delete";
+    deleteBtn.onclick = function() {
+        newTaskItem.remove();
+    };
+
+    var completeBtn = document.createElement("button");
+    completeBtn.innerText = "Complete";
+    completeBtn.onclick = function() {
+        tasksDoneList.appendChild(newTaskItem);
+        newTaskItem.classList.add("completed");
+        completeBtn.remove();
+    };
+
+    newTaskItem.appendChild(textElement);
+    
+    allButtons.appendChild(completeBtn);
+    allButtons.appendChild(deleteBtn);
+    
+    newTaskItem.appendChild(allButtons);
+
+    tasksToDoList.appendChild(newTaskItem);
+
+    inputBox.value = "";
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color-light); 
-    color: var(--text-color-light);
-    padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    var isDarkMode = document.body.classList.contains("dark-mode");
+    darkModeToggle.innerText = isDarkMode ? "Light Mode" : "Dark Mode";
 }
 
-body.dark-mode {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
-}
+addBtn.onclick = addNewTask;
+darkModeToggle.onclick = toggleDarkMode;}
 
 .app-container {
     max-width: 600px;
@@ -236,3 +256,4 @@ body.dark-mode .task-buttons button:hover {
     background-color: var(--secondary-color-dark);
     color: #121212;
 }
+
