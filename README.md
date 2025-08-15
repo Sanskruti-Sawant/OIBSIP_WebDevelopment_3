@@ -15,6 +15,9 @@ A simple and elegant To-Do List application built with HTML, CSS, and JavaScript
 * [How to Contribute](#how-to-contribute)
 * [License](#license)
 
+## View
+<img width="776" height="984" alt="image" src="https://github.com/user-attachments/assets/20443c0b-48ec-4f5f-92a7-a99fc082db48" />
+
 ## Features
 
 * **Add Tasks:** Easily add new tasks to your to-do list.
